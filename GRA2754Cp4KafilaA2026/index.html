@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation | Kafila Aina, 2026</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 180px;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 50px;
+}	
+	
+a:link {
+  color: #303031;
+  background-color: transparent;
+  text-decoration: none;
+}	
+	
+html {
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #303031;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #333;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+#gallery {
+  background-color: #fff9d4;
+	 padding: 60px 60px;
+	font-weight: bold;
+}
+
+#about {
+  background-color: #f4759b;
+}
+
+#contact {
+  background: linear-gradient(135deg, #fcba48, #ff9a3c);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about {
+  background-color: #f4759b;
+  color: white;
+  text-align: center;
+  padding: 80px 90px;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#contact p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+	
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.10);
+  transition: 0.3s;
+}
+
+.contact-title {
+  font-size: 32px;
+  text-align: center;
+  color: #303031;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+	padding-bottom: 50px;
+}	
+	
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #83142c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #83142c;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+	
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  background-color: #303031;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<header>
+  <img src="logo.png" alt="Logo">
+</header>
+
+<nav class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<main>
+
+<section id="gallery">
+<h1><a href="URL">Shop Now!</a></h1>
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="boatorchid.jpg" alt="Boat Orchid">
+      <p>Boat Orchid</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="butterfly orchid.jpg" alt="Butterfly Orchid">
+      <p>Butterfly Orchid</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="monkeyorchid.jpg" alt="Monkey Orchid">
+      <p>Monkey Orchid</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="mothorchid.jpg" alt="Moth Orchid">
+      <p>Moth Orchid</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="Sarcochilus1.jpg" alt="Fairy Bell Orchid">
+      <p>Fairy Bell Orchid</p>
+    </div>
+
+	  <div class="gallery-item">
+      <img src="stalk.jpg" alt="Stalk Orchid">
+      <p>Stalk Orchid</p>
+    </div>
+	  
+	  <div class="gallery-item">
+      <img src="blue.jpg" alt="Blue Orchid">
+      <p>Blue Orchid</p>
+    </div>
+	  
+	  <div class="gallery-item">
+      <img src="tampa.jpg" alt="Tampa Butterfly Orchid">
+      <p>Tampa Butterfly Orchid</p>
+    </div>
+	
+  </div>
+</section>
+
+<section id="about">
+  <h2>All About the Orchids</h2>
+  <p>
+    Here at All About the Orchids (AAO) we prioritize providing healthy,
+    blooming orchids — from familiar favorites to rare species. Whether it’s
+    for Mother’s Day or your growing green thumb, we have something for everyone.
+  </p>
+</section>
+	
+<section id="contact">
+<h2 class="contact-title">Contact Us!</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</section>
+
+</main>
+
+</div>
+
+<script>
+function toggleMenu() {
+  var nav = document.getElementById("myTopnav");
+  if (nav.className === "topnav") {
+    nav.className += " responsive";
+  } else {
+    nav.className = "topnav";
+  }
+}
+</script>
+
+<footer>
+© 2026, Kafila Aina This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.
+</footer>
+
+</body>
+</html>
