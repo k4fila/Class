@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("webfonts/AlteHaasGrotesk/stylesheet.css");
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Background video */
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Wrapper */
+wrapper {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 70px;
+}
+
+/* NAV FIX */
+nav {
+    background-color: rgba(white, 0.50);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #88554a;
+}
+
+/* Logo in nav */
+.logo-nav img {
+    height: 50px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* PRODUCT SECTION */
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+/* Product image styled like a feature */
+.product img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+}
+
+/* Footer with transparent box */
+.footer-box {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    text-align: center;
+}
