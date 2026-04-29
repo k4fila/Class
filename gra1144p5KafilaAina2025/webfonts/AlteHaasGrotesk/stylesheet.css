@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'AlteHaasGrotesk';
+	src: url('AlteHaasGroteskBold.eot');
+	src: url('AlteHaasGroteskBold.eot?#iefix') format('embedded-opentype'),
+		url('AlteHaasGroteskBold.woff') format('woff'),
+		url('AlteHaasGroteskBold.ttf') format('truetype');
+}
